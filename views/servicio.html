@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Servicio - CABA Consulting</title>
+    <style>
+        /* Estilos similares a la página principal */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2C3E50;
+        }
+        .back-button {
+            display: inline-block;
+            background-color: #2C3E50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CABA Consulting</h1>
+    </header>
+    <main>
+        <img id="service-image" src="/api/placeholder/800/300" alt="Servicio">
+        <h2 id="service-title">Título del Servicio</h2>
+        <p id="service-description">Descripción detallada del servicio...</p>
+        <a href="index.html" class="back-button">Volver a la página principal</a>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceType = urlParams.get('type');
+
+            const serviceData = {
+                'registro-productos': {
+                    title: 'Registro de Productos Agrícolas',
+                    description: 'Ofrecemos un servicio completo de registro de productos agrícolas, incluyendo fitosanitarios, materia prima, biológicos, coadyuvantes y otros. Nuestro equipo de expertos se encarga de todo el proceso, asegurando que sus productos cumplan con todas las regulaciones y estándares necesarios para su comercialización.'
+                },
+                'registro-fertilizantes': {
+                    title: 'Registro de Fertilizantes',
+                    description: 'Nuestro servicio de registro de fertilizantes abarca todo el proceso necesario para obtener la aprobación legal de sus productos. Nos encargamos de la documentación, pruebas y trámites requeridos, garantizando que sus fertilizantes cumplan con todas las normativas vigentes.'
+                },
+                'regencia-quimica': {
+                    title: 'Regencia Química',
+                    description: 'Proporcionamos servicios de regencia química de alta calidad, asegurando el manejo seguro y eficiente de productos químicos en su empresa. Nuestros regentes químicos certificados supervisan todos los aspectos relacionados con el uso, almacenamiento y disposición de sustancias químicas, garantizando el cumplimiento de todas las regulaciones aplicables.'
+                },
+                'asesoramientos': {
+                    title: 'Asesoramientos',
+                    description: 'Ofrecemos asesoramiento experto en diversos aspectos del sector agrícola. Nuestro equipo de consultores altamente calificados puede ayudarle con la optimización de procesos, selección de productos, estrategias de cultivo, cumplimiento normativo y mucho más. Nuestro objetivo es ayudarle a maximizar la eficiencia y rentabilidad de su operación agrícola.'
+                },
+                'habilitacion-senave': {
+                    title: 'Habilitación de Entidad Comercial ante SENAVE',
+                    description: 'Facilitamos el proceso de habilitación de su entidad comercial ante el Servicio Nacional de Calidad y
