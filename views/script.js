@@ -1,4 +1,3 @@
-
 // Animación para los elementos de servicio
  observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

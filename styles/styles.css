@@ -33,6 +33,28 @@
         padding: 0;
         background-color: #f4f4f4;
     }
+    .navbar {
+        background-color: #333;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    .navbar a:hover {
+        background-color: #444; 
+        color: white;
+    }
+    .navbar a.active {
+        background-color: #555; 
+        color: white;
+    }
     .container {
         width: 100%;
         margin: auto;
@@ -105,10 +127,24 @@
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
     }
     .faq-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
         background: #fff;
         padding: 20px;
         border-radius: 5px;
         margin-top: 20px;
+        width: 500px;
+    }
+    .faq-div{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
     }
     .faq-item {
         margin-bottom: 15px;
@@ -139,21 +175,7 @@
     .rounded-image {
         border-radius: 50%; 
         overflow: hidden; 
-    }
-
-    .contact-form button {
-        background: #009c3c;
-        color: #ffffff;
-        padding: 10px 20px;
-        border: none;
-        cursor: pointer;
-    }
-    .contact-form {
-        background: #fff;
-        padding: 20px;
-        border-radius: 5px;
-    }
- 
+    } 
     .form-content{
         background: linear-gradient(50deg, rgba(40,42,55,1) 50%, rgba(40,42,55,0.7));
         background-position: center;
@@ -171,5 +193,5 @@
 
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 30%;
     }
