@@ -1,39 +1,46 @@
 <html>
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CABA Consulting - Servicios de Consultoría Agrícola</title>
+    <title>CABA Consulting</title>
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <div class="container header-background">
             <h1>CABA Consulting</h1>
         </div>
-    </header>
-    <nav>
-        <div class="navbar" id="myNavbar">
-            <ul>
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#faq">Preguntas Frecuentes</a></li>
-                <li><a href="#contact">Contacto</a></li>
-                
+    </header>   
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">
+                <img src="../img/LOGOCABA.svg" alt="CABA Consulting Logo" class="logo-img">
+            </a>
+            <div class="menu-icon" id="menu-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#services" class="nav-link">SERVICIOS</a></li>
+                <li class="nav-item"><a href="#faq" class="nav-link">PREGUNTAS FRECUENTES</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">CONTACTO</a></li>
             </ul>
         </div>
     </nav>
 
+
     <div class="container">
         <section id="services">
-            <h2>Nuestros Servicios</h2>
+            <h2 class="service-title">Nuestros Servicios</h2>
             <div class="services">
                 <div class="service-item" onclick="window.open('servicio.html', '_blank')">                   
-                    <img src="..//img/servicio_registro_productos_agricolas.jfif" alt="Productos agrícolas" width="200" height="200" class="rounded-image">
+                    <img src="../img/servicio_registro_productos_agricolas.jfif" alt="Productos agrícolas" width="200" height="200" class="rounded-image">
                     <h3>Registro de Productos Agrícolas</h3>
                     <p>Fitosanitarios, materia prima, biológicos, coadyuvantes y más.</p>
                 </div>
                 <div class="service-item" onclick="window.open('servicio.html', '_blank')">
-                    <img src="../img/fertilizantes.jpg" alt="Fertilizantes" width="200" height="200" class="rounded-image">
+                    <img src="../img/fertilizantes2.jpg" alt="Fertilizantes" width="200" height="200" class="rounded-image">
                     <h3>Registro de Fertilizantes</h3>
                     <p>Aseguramos el correcto registro de sus fertilizantes.</p>
                 </div>
@@ -83,7 +90,7 @@
                     <div class="faq-question">¿Qué ventajas ofrece el servicio de hosting para empresas no instaladas en el país?</div>
                     <div class="faq-answer">Nuestro servicio de hosting ofrece una solución integral para empresas que desean operar en el país sin necesidad de establecer una presencia física. Esto incluye representación legal, manejo de trámites y cumplimiento de regulaciones locales, permitiéndote expandir tu negocio de manera eficiente y económica.</div>
                 </div>
-        </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -108,9 +115,21 @@
     <a href="https://web.whatsapp.com/send?phone=595971895374" class="whatsapp-button" target="_blank">
         <img src="../img/whatsapp-logo.svg" alt="Contactar por WhatsApp" width="60" height="60">
     </a>
- <script src="script.js"></script>
+
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="../img/facebook-logo-svg.svg" alt="Facebook Logo" class="social-logo">
+            </a>
+        </div>
+        <div class="footer-contact">
+            <a href="mailto:info@cabaconsulting.com" class="footer-email">info@cabaconsulting.com</a>
+        </div>
+    </div>
+</footer>
+    <script src="../scripts/script.js"></script>
+
 </body>
 </html>
-
-
-

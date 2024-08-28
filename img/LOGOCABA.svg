@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <!-- Fondo oscuro -->
+  <rect x="0" y="0" width="300" height="150" fill="#1a1a1a" />
+  
+  <!-- Letra C -->
+  <path d="M50 30 A45 45 0 0 0 50 120 L70 120 A25 25 0 0 1 70 30 Z" fill="#e0e0e0" />
+  
+  <!-- Letra A -->
+  <polygon points="110,120 140,30 170,120 155,120 140,80 125,120" fill="#e0e0e0" />
+  
+  <!-- Letra B -->
+  <path d="M190 30 L190 120 L230 120 A25 25 0 0 0 230 75 L190 75 M190 30 L230 30 A25 25 0 0 1 230 75" fill="#e0e0e0" />
+  
+  <!-- Letra A -->
+  <polygon points="250,120 280,30 310,120 295,120 280,80 265,120" fill="#e0e0e0" />
+</svg>
