@@ -1,3 +1,4 @@
+
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #2c2c2c;
@@ -68,6 +69,7 @@ header h1 {
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 }
 .navbar-container {
     display: flex;
@@ -76,6 +78,7 @@ header h1 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 2rem;
+
 }
 
 .navbar a {
@@ -404,4 +407,86 @@ header h1 {
 
 .footer-email:hover {
     color: var(--accent-color);
+}
+
+/* Secciones de Misión, Visión, Valores y Quiénes Somos */
+.section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: bold;
+}
+
+.section-title::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background: #ff6600;
+    display: block;
+    margin: 10px auto;
+}
+
+.section-paragraph {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+    text-align: justify;
+}
+
+.section-list {
+    list-style: none;
+    padding: 0;
+}
+
+.section-list li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    color: #666;
+}
+
+.section-list li::before {
+    content: '✔';
+    color: #ff6600;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#vision {
+    margin-bottom: 60px; /* Ajusta este valor según sea necesario */
+}
+#faq {
+    margin-top: 60px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 60px; 
+}
+#abouy-us {
+    margin-top: 60px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 60px; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-content {
+        padding: 10px;
+    }
 }
